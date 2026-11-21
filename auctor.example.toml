@@ -1,0 +1,27 @@
+# Copy to auctor.toml (ignored by git) and edit. Relative paths resolve against this file.
+
+# The repository whose history is studied.
+repo = "~/notes"
+
+# "git" or "levcs". Detected from the repository when omitted.
+# vcs = "git"
+
+# Globs matching other copies of your home directory, such as filesystem snapshots.
+# Claude Code deletes transcripts after 30 days; snapshots are where the older ones survive.
+home_copies = []
+
+# File suffixes treated as prose.
+extensions = [".md"]
+
+# Where the database and the CSV exports go. They hold transcript text and the repository's
+# text; keep them out of anything you publish.
+db = "corpus.db"
+out = "."
+
+# Model-id prefix -> provider, added to the built-in claude/gpt/gemini.
+# [providers]
+# mistral = "mistral"
+
+# levcs only: names for the signing keys that appear as commit authors.
+# [keys]
+# "<fingerprint hex>" = "agent"

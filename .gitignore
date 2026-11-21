@@ -1,0 +1,7 @@
+# Derived data holds transcript text and repository text. Never committed.
+auctor.toml
+*.db
+*.db-*
+*.csv
+__pycache__/
+*.egg-info/
